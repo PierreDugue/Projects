@@ -31,27 +31,27 @@ footer{
 }
 
 .vcenter{
-     text-align:center; 
+    text-align:center; 
     margin-top:50px;
+}
+
+.row{
+ width:95%;
+ margin:auto;
 }
 
 .fiveDegreeBack{
     width: 100%;
     height: 100%;
     background-color: #ffe8a3;
-    margin: 5px;
     padding: 20px;
-    position: relative;
-    box-shadow: 6px 6px 5px #888888;
+    box-shadow: 6px 6px 2px #888888;
 }
 
 .negSevenDegreeBack{
     width: 100%;
     height: 100%;
     background-color: #ffc382;
-    margin: 0 auto;
     padding: 20px;
-    margin:5px;
-    position: relative;
     box-shadow: 6px 6px 5px #888888;
 }
