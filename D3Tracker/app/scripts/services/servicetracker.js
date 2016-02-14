@@ -11,7 +11,7 @@ angular.module('d3TrackerApp')
     .factory('serviceTracker', function ($http) {
 
         var url = "https://eu.api.battle.net/d3/profile/";
-        var localAndKey = "/?locale=en_GB&apikey=n75p34uvzps72cy3ajsfchpxfmngr6n9";
+        var localAndKey = "?locale=en_GB&apikey=n75p34uvzps72cy3ajsfchpxfmngr6n9";
 
         // Public API here
         return {
@@ -21,7 +21,18 @@ angular.module('d3TrackerApp')
                 console.log(battleTagIdTr);
                 return $http({
                     method: 'GET',
-                    url: url + battleTagIdTr + localAndKey
+                    url: url + battleTagIdTr +"/"+ localAndKey
+                })
+                    .then(function (response) {
+                        return response.data;
+                    }, function (httpData) {
+                        console.log('Error while getting datas');
+                    });
+            },
+            getDetailsChar: function (params) {               
+                return $http({
+                    method: 'GET',
+                    url: url + params.tagId + "/hero/" + params.charId + localAndKey
                 })
                     .then(function (response) {
                         return response.data;

@@ -1,11 +1,12 @@
 <div class="form">
     <p>BattleTap ID</p>
-    <input type="text" name="battleTagId" ng-model="battletag.profile" value="Test"></input>
+    <input type="text" name="battleTagId" ng-model="battletag.profile"></input>
     <button ng-click="getProfile()">Get profile</button>
 </div>
+<h2>{{datasProfile.reason}}</h2>
 <h1>{{datasProfile.battleTag}}</h1>
 <p>Parangon level : {{datasProfile.paragonLevel}}</p>
 <h2>Characters : </h2>
 <div ng-repeat="heroe in datasProfile.heroes">
-    <p>{{heroe.name}}</p>
+    <p><a href="#/details/{{transformedId}}/{{heroe.id}}">{{heroe.name}}</a></p>
 </div>

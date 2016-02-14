@@ -24,6 +24,11 @@ angular
         controller: 'OverviewCtrl',
         controllerAs: 'overview'
       })
+      .when('/details/:tagId/:charId', {
+        templateUrl: 'views/details.html',
+        controller: 'DetailsCtrl',
+        controllerAs: 'details'
+      })
       .otherwise({
         redirectTo: '/'
       });

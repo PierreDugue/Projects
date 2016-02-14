@@ -1,0 +1,10 @@
+<h1>{{datasChar.name}}</h1>
+<h3>{{datasChar.class}}</h3>
+<p></p>
+<p>Level : {{datasChar.level}}</p>
+<p>Items : </p>
+<div ng-repeat="item in datasChar.items">
+    <p data-toggle="tooltip" data-placement="right" title="{{item.tooltipParams}}">{{item.name}}</p>
+</div>
+
+<a href="#/overview">Back</a>

@@ -14,7 +14,7 @@
 
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="tooltip-line.css" />
-
+        <link href="css/lightbox.css" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
         <script type="text/javascript " src="../bootstrap/js/jquery-2.1.4.min.js "></script>
         <script type="text/javascript " src="../bootstrap/js/bootstrap.min.js "></script>
@@ -24,103 +24,70 @@
 
 <body>
     <div id="header">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <h1 class="main-title">Laura LEMOINE</span></h1>
+        </div>
     </div>
     <div id="main">
 
         <div id="resume" class="section">
-            <h1>Laura LEMOINE</h1>
-            <p>Presnetation</p>
+            <h1>Pastry chief</h1>
+            <p id="blockPrez">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-4 vcenter">
-                <div class="negSevenDegreeBack">
-                    <div class="tooltipLine">
-                        <img class="imagesPatisseries" src="images/test.jpg"></img>
-                        <div class="tooltipLine-content">
-                            <div class="tooltipLine-text">
-                                <div class="tooltipLine-inner">
-                                    <p>Hmm Blah blah le bon gateau</p>
-                                    <p>Blah whatever Oz</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 vcenter">
-                <div class="fiveDegreeBack">
-                    <div class="tooltipLine">
-                        <img class="imagesPatisseries" src="images/IMG_20151211_173359.jpg"></img>
-                        <div class="tooltipLine-content">
-                            <div class="tooltipLine-text">
-                                <div class="tooltipLine-inner">
-                                    <p>Hmm Blah blah le bon gateau</p>
-                                    <p>Blah whatever Oz</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 vcenter">
-                <div class="negSevenDegreeBack">
-                    <div class="tooltipLine">
-                        <img class="imagesPatisseries" src="images/test.jpg"></img>
-                        <div class="tooltipLine-content">
-                            <div class="tooltipLine-text">
-                                <div class="tooltipLine-inner">
-                                    <p>Hmm Blah blah le bon gateau</p>
-                                    <p>Blah whatever Oz</p>
-                                </div>
+
+    <h2>Here is a sample of my work</h2>
+    <div class="row">
+        <div class="col-md-4 vcenter">
+            <div class="negSevenDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/IMG_0039.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/IMG_0039.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-4 vcenter">
-                <div class="negSevenDegreeBack">
-                    <div class="tooltipLine">
-                        <img class="imagesPatisseries" src="images/IMG_20151211_173359.jpg"></img>
-                        <div class="tooltipLine-content">
-                            <div class="tooltipLine-text">
-                                <div class="tooltipLine-inner">
-                                    <p>Hmm Blah blah le bon gateau</p>
-                                    <p>Blah whatever Oz</p>
-                                </div>
+        <div class="col-md-4 vcenter">
+            <div class="fiveDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030691.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030691.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 vcenter">
-                <div class="fiveDegreeBack">
-                    <div class="tooltipLine">
-                        <img class="imagesPatisseries" src="images/test.jpg"></img>
-                        <div class="tooltipLine-content">
-                            <div class="tooltipLine-text">
-                                <div class="tooltipLine-inner">
-                                    <p>Hmm Blah blah le bon gateau</p>
-                                    <p>Blah whatever Oz</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 vcenter">
-                <div class="negSevenDegreeBack">
-                    <div class="tooltipLine">
-                        <img class="imagesPatisseries" src="images/IMG_20151211_173359.jpg"></img>
-                        <div class="tooltipLine-content">
-                            <div class="tooltipLine-text">
-                                <div class="tooltipLine-inner">
-                                    <p>Hmm Blah blah le bon gateau</p>
-                                    <p>Blah whatever Oz</p>
-                                </div>
+        </div>
+        <div class="col-md-4 vcenter">
+            <div class="negSevenDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030685.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030685.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
                             </div>
                         </div>
                     </div>
@@ -128,11 +95,122 @@
             </div>
         </div>
     </div>
-    <footer>
 
+    <div class="row">
+        <div class="col-md-4 vcenter">
+            <div class="fiveDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030692.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030692.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 vcenter">
+            <div class="negSevenDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030695.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030695.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 vcenter">
+            <div class="fiveDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030713.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030713.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 vcenter">
+            <div class="negSevenDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030699.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030699.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 vcenter">
+            <div class="fiveDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030718.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030718.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 vcenter">
+            <div class="negSevenDegreeBack">
+                <div class="tooltipLine">
+                    <a href="images/P1030705.jpg" data-lightbox="sampleWork">
+                        <img class="imagesPatisseries" src="images/P1030705.jpg"></img>
+                    </a>
+                    <div class="tooltipLine-content">
+                        <div class="tooltipLine-text">
+                            <div class="tooltipLine-inner">
+                                <p>Hmm Blah blah le bon gateau</p>
+                                <p>Blah whatever Oz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+<p>Don't hesitate to contact me by email</p>
+<p><a href="mailto:mllelemoinelaura@gmail.com" target="_top">mllelemoinelaura@gmail.com </a></p>
     </footer>
     <script type="text/javascript " src="js/main.js"></script>
-
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-2.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>

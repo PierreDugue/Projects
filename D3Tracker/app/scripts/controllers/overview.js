@@ -10,7 +10,7 @@
 angular.module('d3TrackerApp')
     .controller('OverviewCtrl', function ($scope, serviceTracker) {
 
-        $scope.battletag = {};
+        $scope.battletag = {};      
         $scope.getProfile = function () {
 
             var profile = $scope.battletag.profile;
@@ -22,6 +22,10 @@ angular.module('d3TrackerApp')
                 function (data) {
                     console.log("FAIL");
                 });
-        };
+            $scope.transformedId = transformId(profile);
 
+        };
+        var transformId = function (profileId) {
+            return profileId.replace("#", "-");
+        };
     });

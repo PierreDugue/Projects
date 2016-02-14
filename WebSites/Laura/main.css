@@ -1,23 +1,49 @@
-
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 body{
     /*background-image: url("images/orange_background.jpg");*/
     background-color: #ffdbc4;
 }
 
- #main p{
+h1{
+    font-family: 'Poiret One', cursive; 
+    font-size: 80px;
+}
+
+h2{
+    font-family: 'Poiret One', cursive; 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#blockPrez
+{
+    padding-top:40px;
+}
+
+
+#main p{
 	text-align: center;	 
-	font-size: 16px;
+	font-size: 18px;
  }
 
+a{
+    
+}
+
 footer{
-    background-color:red;
-    margin-top:60px;
+    background-color:rgba(140, 100, 100, 1);
+    margin-top:100px;
+    padding-top : 40px;
     height:250px;
+    text-align: center;	 
+	font-size: 20px;
 }
 
 #resume{
     height:500px;
-      background-color:red;
+    padding:60px;
 }
 
 .imagesPatisseries{
@@ -54,4 +80,28 @@ footer{
     background-color: #ffc382;
     padding: 20px;
     box-shadow: 6px 6px 5px #888888;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+    font-family: 'Satisfy', cursive;
+	-webkit-font-smoothing: antialiased;
+}
+
+.large-header{
+    background-image: url('images/IMG_0046.jpg');
+    position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
 }

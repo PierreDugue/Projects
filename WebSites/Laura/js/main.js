@@ -1,9 +1,6 @@
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
-    $('#fullpage').fullpage({
-        anchors: ['slideAbstract']
-    });
     $(".selectorNavbar").fadeTo(0, 0.15);
     $(".selectorNavbar").mouseover(function () {
         $(this).stop(true, true).fadeTo("slow", 1);
